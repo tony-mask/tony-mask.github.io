@@ -9,9 +9,10 @@
   	<meta name="apple-mobile-web-app-status-bar-style" content="black"> 
   	<meta name="apple-mobile-web-app-capable" content="yes">
   	<meta name="format-detection" content="telephone=no">
-	<title>首页 - Blog</title>
+	<title>搜索 - Blog</title>
 	<link rel="stylesheet" href="./static/layui/css/layui.css">
 	<link rel="stylesheet" href="./static/css/common.css">
+	<link rel="stylesheet" href="./static/css/search.css">
 </head>
 <body>
 	<header class="layui-bg-cyan">
@@ -22,7 +23,7 @@
 			    </div>
 			    <div class="layui-col-md8 layui-hide-xs">
 			    	<ul class="layui-nav layui-bg-cyan">
-					  	<li class="layui-nav-item layui-this">
+					  	<li class="layui-nav-item">
 					    	<a href="">首页</a>
 					  	</li>
 					  	<li class="layui-nav-item">
@@ -68,24 +69,13 @@
 		<div class="layui-row layui-col-space20">
 			<div class="layui-col-md8">
 				<div class="layui-row">
-					<div class="layui-col-md12">
-						<div class="layui-carousel" id="carousel">
-					  		<div carousel-item>
-							    <div><img src="https://img.zcool.cn/community/0132815c2581eba80121df90120d8c.jpg@1380w" alt=""></div>
-							    <div><img src="https://img.zcool.cn/community/01cdfb5c244470a8012029ac59da4c.png@1380w" alt=""></div>
-					  		</div>
-						</div>
+					
+					<div class="layui-card">
+					  	<div class="layui-card-body nav">
+					    	<p>以下是关于 “<span>PHP</span>” 的搜索结果!</p>
+					  	</div>
 					</div>
-					<div class="layui-col-md12 margin20"></div>
-					<div class="layui-col-md12">
-						<div class="main zdbox">
-							<div class="subject"><b>[置顶]</b><a href="javascript:;" title="用DTcms做一个独立博客网站（响应式模板）">用layui做一个独立博客网站（响应式模板）</a><em>2018-12-28 11:53:24 发布</em></div>
-							<div class="content">我是熊五，风格迥异的四个我，有着不同的个性，不同的人格，甚至不同的职业。
-行险解秘专注探险的我，朝阳蓬勃酷爱嘻哈的我，精工巧匠专注纹身的我，文墨生花文艺气息满满的我。
-亦是我，亦非我，我是不一样的烟火。</div>
-						</div>
-					</div>
-					<div class="layui-col-md12 margin20"></div>
+
 					<div class="layui-col-md12">
 						<div class="main list">
 							<div class="subject"><a href="javascript:;" class="caty">[PHP]</a><a href="javascript:;" title="用DTcms做一个独立博客网站（响应式模板）">用layui做一个独立博客网站（响应式模板）</a><em>2018-12-28 11:53:24 发布</em></div>
@@ -301,8 +291,7 @@
 							</div>
 						</div>
 					</div>
-					<div class="layui-col-md12 margin20"></div>
-					<div class="layui-col-md12" id="pages"></div>
+
 				</div>
 	        </div>
 	        <div class="layui-col-md4">
@@ -426,10 +415,6 @@
 	    ,width: '100%' //设置容器宽度
 	    ,arrow: 'always' //始终显示箭头
 	    //,anim: 'updown' //切换动画方式
-  	});
-  	layui.laypage.render({
-	    elem: 'pages' //注意，这里的 test1 是 ID，不用加 # 号
-	    ,count: 123 //数据总数，从服务端得到
   	});
 </script>
 </html>
